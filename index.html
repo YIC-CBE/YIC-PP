@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="National-level Paper Presentation by Young Investors Club. Present your finance ideas and gain industry recognition!">
+  <title>Paper Presentation – Young Investors Club</title>
+  <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@500;700&display=swap" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    html, body {
+      font-family: 'Quicksand', sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+    body {
+      background: linear-gradient(to bottom right, #f472b6, #a78bfa, #6366f1);
+      color: #1f2937;
+      overflow-x: hidden;
+    }
+    .btn-primary {
+      background-color: #4F46E5;
+      color: white;
+      font-weight: bold;
+      padding: 15px 30px;
+      border-radius: 50px;
+      transition: background-color 0.3s ease, transform 0.3s ease;
+    }
+    .btn-primary:hover {
+      background-color: #4338CA;
+      transform: scale(1.05);
+    }
+    .card {
+      background-color: white;
+      border-radius: 15px;
+      padding: 20px;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+    .card:hover {
+      transform: translateY(-10px);
+      box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+    }
+    .icon-large {
+      font-size: 3rem;
+    }
+    .section-header {
+      font-size: 2rem;
+      font-weight: bold;
+      color: #4F46E5;
+    }
+    .prize-card {
+      background-color: #fff7e6;
+      border-left: 4px solid #F59E0B;
+      padding: 15px;
+      border-radius: 10px;
+      text-align: center;
+      transition: transform 0.3s ease;
+    }
+    .prize-card:hover {
+      transform: scale(1.05);
+    }
+
+    /* Scroll Down Indicator */
+    .scroll-down {
+      position: absolute;
+      bottom: 20px;
+      left: 50%;
+      transform: translateX(-50%);
+      font-size: 2rem;
+      color: #fff;
+      cursor: pointer;
+      animation: bounce 1.5s infinite;
+    }
+
+    @keyframes bounce {
+      0% {
+        transform: translateY(0);
+      }
+      50% {
+        transform: translateY(-10px);
+      }
+      100% {
+        transform: translateY(0);
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Header Section -->
+  <section class="min-h-screen flex flex-col items-center justify-center px-4 py-10 relative">
+    <div class="bg-white rounded-2xl shadow-2xl max-w-4xl w-full p-6 md:p-10 text-center">
+      <h1 class="text-4xl font-bold mb-4">National-Level Paper Presentation</h1>
+      <p class="text-lg text-purple-700 mb-2">Organized by Young Investors Club</p>
+      <p class="text-sm text-gray-600 mb-2">📅 June 15 | 💻 Google Meet | 💸 ₹200 per team</p>
+      <p id="countdown" class="font-semibold text-sm text-gray-500 mb-4">⏳ Countdown to Event: Loading...</p>
+      <a href="https://forms.gle/YOUR_FORM_LINK" class="btn-primary">Register Now</a>
+    </div>
+
+    <!-- Scroll Down Indicator -->
+    <div class="scroll-down" onclick="scrollToContent()">
+      ⬇️ Scroll Down
+    </div>
+  </section>
+
+  <!-- Benefits Section -->
+  <section class="px-4 py-12" id="content">
+    <div class="max-w-5xl mx-auto grid md:grid-cols-3 gap-8 text-center">
+      <div class="card">
+        <div class="icon-large text-indigo-600">🎓</div>
+        <h3 class="text-lg font-bold">Resume Booster</h3>
+        <p class="text-sm">Present your ideas to NISM-certified professionals and stand out.</p>
+      </div>
+      <div class="card">
+        <div class="icon-large text-indigo-600">💼</div>
+        <h3 class="text-lg font-bold">Expert Evaluation</h3>
+        <p class="text-sm">Get professional feedback on your paper presentation skills.</p>
+      </div>
+      <div class="card">
+        <div class="icon-large text-indigo-600">📜</div>
+        <h3 class="text-lg font-bold">Certified Participation</h3>
+        <p class="text-sm">All participants receive certificates — digital or physical.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Event Details Section -->
+  <section class="bg-white px-4 py-10">
+    <div class="max-w-4xl mx-auto text-sm md:text-base">
+      <div class="grid md:grid-cols-2 gap-6">
+        <ul class="space-y-2">
+          <li><strong>👥 Team Size:</strong> 1 to 4 members</li>
+          <li><strong>💸 Fee:</strong> ₹200 per team (₹50/head)</li>
+          <li><strong>📤 Submission Deadline:</strong> June 5</li>
+        </ul>
+        <ul class="space-y-2">
+          <li><strong>🕒 Time Limit:</strong> 5 mins to present + 2 mins Q&A</li>
+          <li><strong>🧾 Topics:</strong> Any finance or investing domain</li>
+          <li><strong>🌐 Platform:</strong> Google Meet</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- Why Participate Section -->
+  <section class="px-4 py-10 bg-purple-100">
+    <div class="max-w-4xl mx-auto text-center">
+      <h3 class="text-xl font-semibold mb-3">🔥 Why You Should Join</h3>
+      <div class="flex flex-wrap justify-center gap-4 text-sm">
+        <div>🧠 Learn finance basics</div>
+        <div>🎤 Build confidence presenting</div>
+        <div>📃 Get certified</div>
+        <div>🏆 Impress recruiters</div>
+        <div>🧑‍💼 Network with peers</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Awards & Prizes Section -->
+  <section class="px-4 py-10">
+    <div class="max-w-4xl mx-auto text-center">
+      <h3 class="text-xl font-semibold mb-4">🏆 Awards & Prizes</h3>
+      <div class="grid md:grid-cols-2 gap-4 text-sm">
+        <div class="prize-card">
+          <h4 class="font-bold text-yellow-700">🥇 First 3 Prizes</h4>
+          <p>Top 3 teams will receive exciting <strong>cash prizes</strong> + Certificates of Excellence</p>
+        </div>
+        <div class="prize-card">
+          <h4 class="font-bold text-pink-700">🌟 Innovative Paper Award</h4>
+          <p>The most creative and impactful paper will be awarded a <strong>Netflix subscription</strong></p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer Section -->
+  <footer class="text-center text-sm text-gray-700 py-6">
+    💬 DM us on 
+<a href="https://wa.me/916382353560" class="text-indigo-600 font-medium inline-flex items-center" target="_blank">
+  <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp" width="20" height="20" style="margin-right: 6px;">
+  WhatsApp Event Organizer
+</a> for queries. <br/>
+
+    © 2025 Young Investors Club
+  </footer>
+
+  <script>
+    // Countdown Timer
+    const countdown = document.getElementById('countdown');
+    const eventDate = new Date('June 15, 2025 00:00:00').getTime();
+    const x = setInterval(() => {
+      const now = new Date().getTime();
+      const distance = eventDate - now;
+      if (distance < 0) {
+        countdown.innerHTML = '🎉 The event is live today!';
+        clearInterval(x);
+        return;
+      }
+      const days = Math.floor(distance / (1000 * 60 * 60 * 24));
+      const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+      const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+      countdown.innerHTML = `⏳ Countdown to Event: ${days}d ${hours}h ${minutes}m`;
+    }, 1000);
+
+    // Scroll to Content
+    function scrollToContent() {
+      document.getElementById('content').scrollIntoView({ behavior: 'smooth' });
+    }
+  </script>
+
+</body>
+</html>
